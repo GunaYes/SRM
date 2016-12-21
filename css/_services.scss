@@ -1,0 +1,66 @@
+/*Services*/
+.inner-top-wrap {
+    height: 200px;
+    overflow: hidden;
+}
+.inner-service-wrap {
+    background: url("../img/banner_services.png") no-repeat center 0;
+}
+.inner-service-cont {
+    .serv-list {
+        li {
+            width:33.33333333%;
+            border-right: 1px solid #e5e4e4 !important;
+            border-bottom: 1px solid #e5e4e4 !important;
+            &:nth-child(3n+3) {
+                border-right: none !important;
+            }
+            &:nth-child(7) {
+                border-bottom: none !important;
+            }
+            &:nth-child(8) {
+                border-bottom: none !important;
+            }
+        }
+    }
+}
+.foo-menu-wrap {
+    overflow: hidden;
+    background-color:#a8e9ff;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#a8e9ff, endColorstr=#052afc);
+    background-image:-moz-linear-gradient(left bottom, rgba(164,90,103,0.5) 0%, #052afc 25%,#ff8d00 100%);
+    background-image:linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+    background-image:-webkit-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+    background-image:-o-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+    background-image:-ms-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%,#ff8d00 100%);
+    background-image:-webkit-gradient(linear, left bottom, right top, color-stop(0%,#a8e9ff), color-stop(25%,#052afc),color-stop(100%,#ff8d00));
+    .foo-logo {
+        order: 1;
+        -webkit-order: 1;
+        width: 15%;
+    }
+    .foo-menu {
+        order: 2;
+        -webkit-order: 2;
+        width: 60%;
+        li {
+            display: inline-block;
+            padding-right: 35px;
+            font-size: 15px;
+            margin: 22px 0 20px;
+            &:last-child {
+                padding-right: 0;
+            }
+            a {
+                color: rgba(255,255,255,0.8);
+            }
+        }
+    }
+    .social-links {
+        order: 3;
+        -webkit-order: 3;
+        width: 25%;
+        float: right;
+    }
+}
+

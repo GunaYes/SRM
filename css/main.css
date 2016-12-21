@@ -1,0 +1,515 @@
+/* Scss Document */
+/* rotate */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "robotoregular"; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+
+img {
+  vertical-align: middle; }
+
+a:hover {
+  text-decoration: none; }
+
+.pad-zero {
+  padding: 0; }
+
+section {
+  overflow: hidden; }
+
+header {
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute; }
+  header .logo {
+    display: inline-block;
+    margin: 10px 0 0; }
+    header .logo img {
+      margin: 0 15px 0 0;
+      vertical-align: middle; }
+    header .logo span {
+      font-family: "myraidpro-bold";
+      font-size: 27px;
+      color: #fff;
+      vertical-align: middle; }
+  header nav {
+    overflow: hidden;
+    display: inline-block;
+    margin: 22px 0 0;
+    float: right; }
+    header nav ul {
+      overflow: hidden; }
+      header nav ul li {
+        float: left;
+        margin: 0 35px 0 0; }
+        header nav ul li a {
+          font-family: "robotolight";
+          font-size: 16px;
+          color: #fff; }
+          header nav ul li a:hover {
+            color: #fff;
+            background: url(../img/nav-hover.png) no-repeat center center; }
+        header nav ul li:last-child {
+          margin: 0; }
+
+#home-banner {
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1; }
+
+.banner {
+  background: url(../img/banner-img1.jpg) no-repeat center center;
+  position: relative; }
+  .banner .banner-caption-wrap {
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg); }
+
+.banner-caption {
+  width: 34%;
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  top: 43%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 40px 15px 80px 30px;
+  border-left: 7px solid rgba(0, 0, 0, 0.5);
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  transform: skewY(5deg); }
+  .banner-caption h1 {
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 54px; }
+  .banner-caption p {
+    color: #fff;
+    font-family: "robotolight";
+    line-height: 26px;
+    font-size: 16px;
+    margin: 25px 0 20px; }
+  .banner-caption a {
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 15px;
+    display: inline-block; }
+
+.head-txt {
+  font-family: "robotolight";
+  font-size: 20px;
+  color: #454545;
+  line-height: 37px;
+  text-align: center; }
+  .head-txt span {
+    font-family: "myraidpro-bold";
+    font-size: 54px;
+    background: -webkit-linear-gradient(left, #0048bb, #e84242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    .head-txt span b {
+      font-weight: normal;
+      font-family: "robotolight"; }
+
+.serv-wrap {
+  padding: 0; }
+
+.serv-list {
+  overflow: hidden;
+  margin: 75px 0; }
+  .serv-list li {
+    display: inline-block;
+    border-right: 1px solid #e5e4e4;
+    border-bottom: 1px solid #e5e4e4;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    width: 24%;
+    margin: 0 -4px 0 0;
+    padding: 30px 12px; }
+    .serv-list li:hover {
+      background: -webkit-linear-gradient(-156deg, #f53f19, #0048bb);
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      .serv-list li:hover:nth-child(1) span {
+        background-image: url(../img/thermal-insul-hvr.png); }
+      .serv-list li:hover:nth-child(2) span {
+        background-image: url(../img/cold-insulation-hvr.png); }
+      .serv-list li:hover:nth-child(3) span {
+        background-image: url(../img/fire-icon-hvr.png); }
+      .serv-list li:hover:nth-child(4) span {
+        background-image: url(../img/project-consul-hvr.png); }
+      .serv-list li:hover:nth-child(5) span {
+        background-image: url(../img/electrical-icon-hvr.png); }
+      .serv-list li:hover:nth-child(6) span {
+        background-image: url(../img/paint-icon-hvr.png); }
+      .serv-list li:hover:nth-child(7) span {
+        background-image: url(../img/manpower-icon-hvr.png); }
+      .serv-list li:hover:nth-child(8) span {
+        background-image: url(../img/other-serv-icon-hvr.png); }
+      .serv-list li:hover h4 {
+        color: #fff; }
+      .serv-list li:hover p {
+        color: #fff; }
+    .serv-list li span {
+      background-repeat: no-repeat;
+      display: block;
+      margin: 0 0 15px;
+      height: 40px;
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+      background-position: center center; }
+    .serv-list li h4 {
+      text-align: center;
+      font-family: "RobotoMedium";
+      font-size: 16px;
+      color: #2d5982;
+      margin: 0 0 15px;
+      text-transform: uppercase; }
+    .serv-list li p {
+      text-align: center;
+      color: #2d5982;
+      line-height: 20px;
+      font-family: "robotolight";
+      font-size: 15px; }
+    .serv-list li:nth-child(1) span {
+      background-image: url(../img/thermal-insul.png); }
+    .serv-list li:nth-child(2) span {
+      background-image: url(../img/cold-insulation.png); }
+    .serv-list li:nth-child(3) span {
+      background-image: url(../img/fire-icon.png); }
+    .serv-list li:nth-child(4) {
+      border-right: none; }
+      .serv-list li:nth-child(4) span {
+        background-image: url(../img/project-consul.png); }
+    .serv-list li:nth-child(5) {
+      border-bottom: none; }
+      .serv-list li:nth-child(5) span {
+        background-image: url(../img/electrical-icon.png); }
+    .serv-list li:nth-child(6) {
+      border-bottom: none; }
+      .serv-list li:nth-child(6) span {
+        background-image: url(../img/paint-icon.png); }
+    .serv-list li:nth-child(7) {
+      border-bottom: none; }
+      .serv-list li:nth-child(7) span {
+        background-image: url(../img/manpower-icon.png); }
+    .serv-list li:nth-child(8) {
+      border: none; }
+      .serv-list li:nth-child(8) span {
+        background-image: url(../img/other-serv-icon.png); }
+
+.welcome-text {
+  padding: 0;
+  margin-top: 60px; }
+  .welcome-text p {
+    color: #2d5982;
+    font-family: "robotolight";
+    font-size: 15px;
+    margin: 0 0 15px; }
+  .welcome-text a {
+    color: #2d5982;
+    font-family: "robotoregular";
+    font-size: 16px;
+    border: 1px solid #2d5982;
+    padding: 12px 10px;
+    display: inline-block;
+    margin: 5px 0 0; }
+
+footer {
+  background: #2d2d2d; }
+  footer p {
+    font-family: "robotoregular";
+    font-size: 14px;
+    color: #a7a7a7;
+    padding: 10px 0;
+    text-align: center; }
+
+.cust {
+  margin: 50px 0 20px; }
+  .cust h3 {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #2d5982; }
+  .cust h4 {
+    color: #454849;
+    font-size: 15px;
+    font-family: "robotoregular";
+    margin: 0 0 10px; }
+  .cust h5 {
+    color: #2d5982;
+    font-style: italic;
+    font-size: 15px;
+    font-family: "RobotoMedium";
+    margin: 0 0 25px; }
+  .cust p {
+    color: #2d5982;
+    width: 28%;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "robotoregular"; }
+
+#customer-review {
+  margin: 60px 0; }
+
+#customer-slider .slick-dots {
+  bottom: 0px; }
+  #customer-slider .slick-dots li button {
+    border: 2px solid #646464;
+    padding: 4px; }
+  #customer-slider .slick-dots .slick-active button {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    -webkit-transform-origin: 11px center;
+    -moz-transform-origin: 11px center;
+    -ms-transform-origin: 11px center;
+    transform-origin: 11px center; }
+
+#home-banner .slick-dots .slick-active button {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform-origin: 11px center;
+  -moz-transform-origin: 11px center;
+  -ms-transform-origin: 11px center;
+  transform-origin: 11px center; }
+
+.get-wrap {
+  background: url(../img/home-contact-bg.jpg) no-repeat center center;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  transform: skewY(2deg);
+  margin: 20px 0 70px; }
+  .get-wrap .get-address {
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    overflow: hidden;
+    padding: 50px 0; }
+    .get-wrap .get-address div {
+      padding: 45px 0 0; }
+    .get-wrap .get-address .addr {
+      padding: 0 !important; }
+    .get-wrap .get-address img {
+      vertical-align: middle;
+      margin: 0 18px 0 0; }
+    .get-wrap .get-address address {
+      vertical-align: middle;
+      display: inline-block;
+      color: #fff;
+      font-size: 16px; }
+      .get-wrap .get-address address p {
+        display: block; }
+    .get-wrap .get-address p {
+      vertical-align: middle;
+      color: #fff;
+      font-size: 16px;
+      display: inline-block; }
+    .get-wrap .get-address a {
+      color: #fff; }
+
+.social-links {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle; }
+  .social-links li {
+    margin: 0 45px 0 0;
+    float: left; }
+    .social-links li a {
+      display: block;
+      height: 21px; }
+    .social-links li:nth-child(1) a {
+      background: url(../img/social-icons.png) no-repeat 0 0;
+      width: 12px; }
+    .social-links li:nth-child(2) a {
+      background: url(../img/social-icons.png) no-repeat -60px 0;
+      width: 22px; }
+    .social-links li:nth-child(3) a {
+      background: url(../img/social-icons.png) no-repeat -122px 0;
+      width: 27px; }
+    .social-links li:nth-child(4) {
+      margin: 0; }
+      .social-links li:nth-child(4) a {
+        background: url(../img/social-icons.png) no-repeat -190px 0;
+        width: 19px; }
+
+.enquiry-caption {
+  background: -webkit-linear-gradient(-156deg, #e84242, #0048bb);
+  -webkit-background-clip: text;
+  font-size: 20px;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px; }
+  .enquiry-caption img {
+    margin: 0 10px 0 0; }
+
+.home-submit {
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  margin: 20px auto;
+  display: inherit;
+  background: -webkit-linear-gradient(-156deg, #e84242, #0048bb);
+  font-size: 20px;
+  color: #fff; }
+
+.enquiry-form p {
+  margin: 0 0 12px;
+  border: 1px solid #989999; }
+  .enquiry-form p input {
+    width: 100%;
+    padding: 15px;
+    color: rgba(2, 2, 2, 0.8);
+    font-size: 15px;
+    border: none;
+    outline: none; }
+  .enquiry-form p textarea {
+    width: 100%;
+    resize: none;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none; }
+
+/*Services*/
+.inner-top-wrap {
+  height: 200px;
+  overflow: hidden; }
+
+.inner-service-wrap {
+  background: url("../img/banner_services.png") no-repeat center 0; }
+
+.inner-service-cont .serv-list li {
+  width: 33.33333333%;
+  border-right: 1px solid #e5e4e4 !important;
+  border-bottom: 1px solid #e5e4e4 !important; }
+  .inner-service-cont .serv-list li:nth-child(3n+3) {
+    border-right: none !important; }
+  .inner-service-cont .serv-list li:nth-child(7) {
+    border-bottom: none !important; }
+  .inner-service-cont .serv-list li:nth-child(8) {
+    border-bottom: none !important; }
+
+.foo-menu-wrap {
+  overflow: hidden;
+  background-color: #a8e9ff;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#a8e9ff, endColorstr=#052afc);
+  background-image: -moz-linear-gradient(left bottom, rgba(164, 90, 103, 0.5) 0%, #052afc 25%, #ff8d00 100%);
+  background-image: linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%, #ff8d00 100%);
+  background-image: -webkit-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%, #ff8d00 100%);
+  background-image: -o-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%, #ff8d00 100%);
+  background-image: -ms-linear-gradient(left bottom, #a8e9ff 0%, #052afc 25%, #ff8d00 100%);
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #a8e9ff), color-stop(25%, #052afc), color-stop(100%, #ff8d00)); }
+  .foo-menu-wrap .foo-logo {
+    order: 1;
+    -webkit-order: 1;
+    width: 15%; }
+  .foo-menu-wrap .foo-menu {
+    order: 2;
+    -webkit-order: 2;
+    width: 60%; }
+    .foo-menu-wrap .foo-menu li {
+      display: inline-block;
+      padding-right: 35px;
+      font-size: 15px;
+      margin: 22px 0 20px; }
+      .foo-menu-wrap .foo-menu li:last-child {
+        padding-right: 0; }
+      .foo-menu-wrap .foo-menu li a {
+        color: rgba(255, 255, 255, 0.8); }
+  .foo-menu-wrap .social-links {
+    order: 3;
+    -webkit-order: 3;
+    width: 25%;
+    float: right; }
+
+@font-face {
+  font-family: 'myraidpro-bold';
+  src: url("../fonts/myriadpro-bold.woff2") format("woff2"), url("../fonts/myriadpro-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../fonts/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=main.css.map */

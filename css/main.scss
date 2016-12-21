@@ -1,0 +1,703 @@
+/* Scss Document */
+$rob-medium:'RobotoMedium';
+$rob-regular:'robotoregular';
+$rob-light:'robotolight';
+$myraidpro-bold:'myraidpro-bold';
+@mixin border-radius($radius) {
+ -webkit-border-radius: $radius;
+ -moz-border-radius: $radius;
+ -ms-border-radius: $radius;
+ border-radius: $radius;
+}
+@mixin transform($transform) {
+ -webkit-transform: $transform;
+ -moz-transform: $transform;
+ -ms-transform: $transform;
+ transform: $transform;
+}
+ /* rotate */
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+} 
+@mixin transform-origin($transform-origin) {
+ -webkit-transform-origin: $transform-origin;
+ -moz-transform-origin: $transform-origin;
+ -ms-transform-origin: $transform-origin;
+ transform-origin: $transform-origin;
+}
+@mixin appearance($none) {
+ -webkit-appearance: $none;
+ -moz-appearance: $none;
+ -ms-appearance: $none;
+ appearance: $none;
+}
+@mixin transition($transition) {
+ -moz-transition: $transition;
+ -o-transition:$transition;
+ -webkit-transition:$transition;
+ transition:$transition;
+}
+@mixin placeholder {
+  &::-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+body 
+{
+    font-size: 12px;
+    font-family: $rob-regular;
+}
+input, textarea 
+{
+   @include placeholder 
+   {
+        @include transition (0.3s all);        
+    }
+    &:focus 
+    {
+       @include placeholder 
+        {
+            opacity: 0;
+            @include transition (0.3s all);        
+        }
+    }
+}
+img
+{
+    vertical-align: middle;
+}
+a 
+{
+    &:hover 
+    {
+        text-decoration: none;
+    }
+}
+.pad-zero 
+{
+    padding: 0;
+}
+section 
+{
+    overflow: hidden;
+}
+header 
+{
+    z-index: 2;
+    @include transform (translateX(-50%));
+    left: 50%;
+    position: absolute;
+    .logo 
+    {
+        display: inline-block;
+        margin: 10px 0 0;
+        img 
+        {
+            margin: 0 15px 0 0;
+            vertical-align: middle;
+        }
+        span 
+        {   
+            font-family: $myraidpro-bold;
+            font-size: 27px;
+            color: #fff;
+            vertical-align: middle;
+            b 
+            {
+                
+            }
+        }
+    }
+    nav 
+    {   
+        overflow: hidden;
+        display: inline-block;
+        margin: 22px 0 0;
+        float: right;
+        ul 
+        {   
+            overflow: hidden;
+            li 
+            {   
+                float: left;
+                margin: 0 35px 0 0;
+                a 
+                {
+                    font-family: $rob-light;
+                    font-size: 16px;
+                    color: #fff;
+                    &:hover
+                    {
+                        color: #fff;
+                        background: url(../img/nav-hover.png) no-repeat center center;
+                    }
+                }
+                &:last-child 
+                {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+#home-banner 
+{
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+.banner 
+{
+    background: url(../img/banner-img1.jpg) no-repeat center center;
+    position: relative;
+    .banner-caption-wrap 
+    {   
+        @include transform (skewY(-5deg));
+       
+    }
+}
+ .banner-caption 
+        {   
+            width: 34%;
+            display: inline-block;
+            position: absolute;
+            left: 10%;
+            top: 43%;
+            background: rgba(0,0,0,0.2);
+            padding: 40px 15px 80px 30px;
+            border-left: 7px solid rgba(0,0,0,0.5);
+            @include transform (skewY(5deg));
+            h1 
+            {
+                color: #fff;
+                font-family: $rob-regular;
+                font-size: 54px;
+            }
+            p 
+            {
+                color: #fff;
+                font-family: $rob-light;
+                line-height: 26px;
+                font-size: 16px;
+                margin: 25px 0 20px;
+            }
+            a 
+            {
+                color: #fff;
+                font-family: $rob-regular;
+                font-size: 18px;
+                border: 1px solid #fff;
+                padding: 15px;
+                display: inline-block;
+            }
+        }
+.head-txt
+{
+    font-family: $rob-light;
+    font-size: 20px;
+    color: #454545;
+    line-height: 37px;
+    text-align: center;
+    span 
+    {
+        font-family: $myraidpro-bold;
+        font-size: 54px;
+            background: -webkit-linear-gradient(left,#0048bb,#e84242);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        b 
+        {
+            font-weight: normal;
+            font-family: $rob-light;
+        }
+    }
+}
+.serv-wrap 
+{
+    padding: 0;
+}
+.serv-list 
+{   
+    overflow: hidden;
+    margin: 75px 0;
+    li 
+    {   
+        display: inline-block;
+        border-right: 1px solid #e5e4e4;
+        border-bottom: 1px solid #e5e4e4;
+        @include transition(0.3s all ease);
+        width: 24%;
+        margin: 0 -4px 0 0;
+        padding: 30px 12px;
+        &:hover 
+        {   
+            background: -webkit-linear-gradient(-156deg,#f53f19,#0048bb);
+            @include transition(0.3s all ease);
+            &:nth-child(1)
+            {   span 
+                {
+                    background-image: url(../img/thermal-insul-hvr.png);
+                }
+                
+            }
+            &:nth-child(2)
+            {   
+                span 
+                {
+                  background-image: url(../img/cold-insulation-hvr.png);  
+                }
+                
+            }
+            &:nth-child(3)
+            {   
+                 span 
+                {
+                    background-image: url(../img/fire-icon-hvr.png); 
+                }
+               
+            }
+            &:nth-child(4)
+            {   
+                 span 
+                {
+                 background-image: url(../img/project-consul-hvr.png);
+
+                }
+            }
+            &:nth-child(5)
+            {   
+                 span 
+                {
+                    background-image: url(../img/electrical-icon-hvr.png);
+                }
+                
+            }
+            &:nth-child(6)
+            {   
+                 span 
+                {
+                    background-image: url(../img/paint-icon-hvr.png);
+                }
+                
+            }
+            &:nth-child(7)
+            {   
+                 span 
+                {
+                    background-image: url(../img/manpower-icon-hvr.png);
+                }
+                
+            }
+            &:nth-child(8)
+            {   
+                 span 
+                {
+                     background-image: url(../img/other-serv-icon-hvr.png);
+                }
+               
+            }
+            h4 
+            {
+                color: #fff;
+            }
+            p 
+            {
+                color: #fff;
+            }
+        }
+        span 
+        {   
+            background-repeat: no-repeat;
+            display: block;
+            margin: 0 0 15px;
+            height: 40px;
+            @include transition(0.3s all ease);
+            background-position: center center;
+        }
+        
+            h4 
+            {   
+                text-align: center;
+                font-family: $rob-medium;
+                font-size: 16px;
+                color: #2d5982;
+                margin: 0 0 15px;
+                text-transform: uppercase;
+            }
+                p 
+                {
+                    text-align: center;
+                    color: #2d5982;
+                    line-height: 20px;
+                    font-family: $rob-light;
+                    font-size: 15px;
+                }
+        &:nth-child(1)
+        {
+           span 
+            {
+                background-image: url(../img/thermal-insul.png);
+            }
+        }
+         &:nth-child(2)
+        {
+           span 
+            {
+                background-image: url(../img/cold-insulation.png);
+            }
+        }
+         &:nth-child(3)
+        {
+           span 
+            {
+                background-image: url(../img/fire-icon.png);
+            }
+        }
+         &:nth-child(4)
+        {   
+            border-right: none;
+           span 
+            {
+                background-image: url(../img/project-consul.png);
+            }
+        }
+         &:nth-child(5)
+        {   
+            border-bottom: none;
+           span 
+            {
+                background-image: url(../img/electrical-icon.png);
+            }
+        }
+         &:nth-child(6)
+        {   
+            border-bottom: none;
+           span 
+            {
+                background-image: url(../img/paint-icon.png);
+            }
+        }
+         &:nth-child(7)
+        {   
+            border-bottom: none;
+           span 
+            {
+                background-image: url(../img/manpower-icon.png);
+            }
+        }
+         &:nth-child(8)
+        {   
+            border: none;
+           span 
+            {
+                background-image: url(../img/other-serv-icon.png);
+            }
+        }
+    }
+}
+.welcome-text 
+{   
+    padding: 0;
+    margin-top: 60px;
+    p 
+    {
+        color: #2d5982;
+        font-family: $rob-light;
+        font-size: 15px;
+        margin: 0 0 15px;
+    }
+    a 
+    {
+        color: #2d5982;
+        font-family: $rob-regular;
+        font-size: 16px;
+        border: 1px solid #2d5982;
+        padding: 12px 10px;
+        display: inline-block;
+        margin: 5px 0 0;
+    }
+}
+footer 
+{   
+    background: #2d2d2d;
+    p 
+    {
+        font-family: $rob-regular;
+        font-size: 14px;
+        color: #a7a7a7;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+.cust 
+{   
+    margin: 50px 0 20px;
+    h3 
+    {
+        width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #2d5982;
+    }
+    h4 
+    {
+        color: #454849;
+        font-size: 15px;
+        font-family: $rob-regular;
+        margin: 0 0 10px;
+        
+    }
+     h5 
+    {
+        color: #2d5982;
+        font-style: italic;
+        font-size: 15px;
+        font-family: $rob-medium;
+        margin: 0 0 25px;
+        
+    }
+    p 
+    {
+        color: #2d5982;
+        width: 28%;
+        margin: 0 auto;
+        line-height: 24px;
+        font-size: 15px;
+        margin-bottom:20px;
+        font-family: $rob-regular;
+    }
+}
+#customer-review 
+{
+    margin: 60px 0;
+}
+#customer-slider 
+{
+    .slick-dots 
+    {
+        bottom: 0px;
+        li 
+        {
+            button 
+            {
+                border: 2px solid #646464;
+                padding: 4px;
+            }
+        }
+        .slick-active 
+        {
+            button 
+            {
+                @include transform (scale(1.4));
+                @include transition (0.2s ease-out);
+                @include transform-origin (11px center);
+            }
+        }
+    }
+}
+#home-banner 
+{
+    .slick-dots 
+    {
+        .slick-active 
+        {
+            button 
+            {
+                @include transform (scale(1.4));
+                @include transition (0.2s ease-out);
+                @include transform-origin (11px center);
+            }
+        }
+    }
+}
+.get-wrap 
+{
+    background: url(../img/home-contact-bg.jpg) no-repeat center center;
+    @include transform (skewY(2deg));
+    margin: 20px 0 70px;
+    .get-address 
+    {
+        @include transform (skewY(-2deg));
+        overflow: hidden;
+        padding: 50px 0;
+        div
+        {
+            padding: 45px 0 0;
+        }
+        .addr 
+        {
+            padding: 0 !important;
+        }
+       img 
+        {
+            vertical-align: middle;
+            margin: 0 18px 0 0;
+        }
+        address 
+        {
+            vertical-align: middle;
+            display: inline-block;
+            color: #fff;
+            font-size: 16px;
+            p 
+            {
+                display: block;
+            }
+        }
+        p 
+        {
+            vertical-align: middle;
+            color: #fff;
+            font-size: 16px;
+            display: inline-block;
+        }
+        a 
+        {
+            color: #fff;
+        }
+    }
+}
+.social-links 
+{   
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    li 
+    {   
+        margin: 0 45px 0 0;
+        float: left;
+        a 
+        {
+            display: block;
+            height: 21px;
+        }
+        &:nth-child(1)
+        {
+            a 
+            {
+                background: url(../img/social-icons.png) no-repeat 0 0;
+                width: 12px;
+            }
+        }
+        &:nth-child(2)
+        {
+            a 
+            {
+                background: url(../img/social-icons.png) no-repeat -60px 0;
+                   width: 22px;
+            }
+        }
+        &:nth-child(3)
+        {
+            a 
+            {
+                background: url(../img/social-icons.png) no-repeat -122px 0;
+                width: 27px;
+                
+            }
+        }
+        &:nth-child(4)
+        {   
+            margin: 0;
+            a 
+            {
+                background: url(../img/social-icons.png) no-repeat -190px 0;
+                width: 19px;
+            }
+        }
+    }
+}
+.enquiry-caption 
+{
+        background: -webkit-linear-gradient(-156deg,#e84242,#0048bb);
+        -webkit-background-clip: text;
+        font-size: 20px;
+       display: inline-block;
+        -webkit-text-fill-color: transparent;
+    margin: 0 0 20px;
+    img 
+    {
+        margin: 0 10px 0 0;
+    }
+}
+.home-submit 
+{
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    margin: 20px auto;
+    display: inherit; 
+    background: -webkit-linear-gradient(-156deg,#e84242,#0048bb);
+        font-size: 20px;
+    color: #fff;
+}
+.enquiry-form 
+{
+    p 
+    {   
+        margin: 0 0 12px;
+        border: 1px solid #989999;
+     input 
+        {
+            width: 100%;
+            padding: 15px;
+            color: rgba(2,2,2,0.8);
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        textarea 
+        {
+            width: 100%;
+            resize: none;
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+    }
+    
+}
+
+@import "services";
+
+@font-face {
+	font-family: 'myraidpro-bold';
+	src: url('../fonts/myriadpro-bold.woff2') format('woff2'), url('../fonts/myriadpro-bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.woff2') format('woff2'),
+         url('../fonts/RobotoMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
